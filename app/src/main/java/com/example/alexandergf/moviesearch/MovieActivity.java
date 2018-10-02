@@ -55,6 +55,6 @@ public class MovieActivity extends AppCompatActivity {
         genreview.setText(movie.getGenre());
         directorview.setText(movie.getDirector());
         writerview.setText(movie.getWriter());
-        actorsview.setText(movie.getActors());
+        actorsview.setText(movie.getActors().replace(", ","\n"));
     }
 }
